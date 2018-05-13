@@ -1,8 +1,8 @@
 {
-  "name": "MartosJose",
+  "name": "vuewebsite",
   "version": "2.0.0",
   "author": "Jose Martos",
-  "description": "Jose Martos main website",
+  "description": "Jose Martos main website - martosjose.com",
   "license": "ISC",
   "main": "index.js",
   "scripts": {

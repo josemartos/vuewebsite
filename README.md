@@ -1,6 +1,6 @@
 # vuewebsite
 
-Simple Vue.js application
+Simple Vue.js application. See [live](http://www.martosjose.com)
 
 ## description
 
@@ -25,3 +25,4 @@ production
 ```sh
 npm run build
 ```
+
