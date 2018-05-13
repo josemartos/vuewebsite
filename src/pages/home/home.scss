@@ -1,11 +1,11 @@
 @import "~styles/core/core";
 
-.home_nav {
+.nav {
     background-color: $c-grey200;
     text-align: center;
 }
 
-.home_navList {
+.nav_list {
     display: flex;
     flex-wrap: wrap;
     transition: all .2s;
@@ -52,7 +52,7 @@
     }
 }
 
-.home_greetings {
+.greetings {
     padding-top: 20px;
     text-align: center;
 

@@ -1,6 +1,6 @@
 @import "~styles/core/core";
 
-.header {
+header {
     padding: 120px 0 70px;
     text-align: center;
 
@@ -9,7 +9,7 @@
     }
 }
 
-.header_logo {
+.logo {
     @include retina-background-image("/assets/png/logo", "png", 131px, 64px);
 
     height: 64px;
@@ -30,7 +30,7 @@
     }
 }
 
-.header_title {
+.title {
     color: $c-grey400;
     font-size: 22px;
     font-weight: 300;
@@ -38,7 +38,7 @@
     text-align: center;
 }
 
-.header_position {
+.position {
     color: $c-grey300;
     font-size: 18px;
     margin: 0 auto;
