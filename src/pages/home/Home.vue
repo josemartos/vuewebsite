@@ -23,5 +23,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "home.scss";
+    @import "Home.scss";
 </style>

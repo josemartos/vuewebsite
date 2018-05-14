@@ -7,5 +7,5 @@
 </template>
 
 <style lang="scss" scoped>
-	@import "footer.scss";
+	@import "Footer.scss";
 </style>
