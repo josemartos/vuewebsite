@@ -9,9 +9,9 @@
 </template>
 
 <script>
-    import Home from './pages/home/Home.vue';
-    import MainHeader from './components/header/Header.vue';
-    import MainFooter from './components/footer/Footer.vue';
+    import Home from './pages/Home.vue';
+    import MainHeader from './components/Header.vue';
+    import MainFooter from './components/Footer.vue';
 
     export default {
 		components: {
