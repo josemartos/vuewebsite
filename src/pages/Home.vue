@@ -44,6 +44,7 @@
             display: inline-block;
             font-size: 24px;
             font-weight: 300;
+            padding-bottom: 5px;
             text-align: center;
             transition: all .2s;
 
@@ -63,7 +64,7 @@
         @media screen and (max-width: $phone) {
             a {
                 font-size: 20px;
-                padding: 8px 0;
+                padding: 8px 0 11px;
                 width: 100%;
             }
 
