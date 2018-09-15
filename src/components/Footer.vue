@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="page-container">
-            <p class="bio">&laquo;Passionate about the web for a while now, currently based in Berlin&raquo;</p>
+            <p class="bio">Passionate about the web for a while now, currently traveling</p>
         </div>
     </footer>
 </template>

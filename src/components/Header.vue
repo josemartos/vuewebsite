@@ -3,7 +3,7 @@
         <a href="/" title="martos website" class="logo">martos website</a>
 
         <h1 class="title">Jos&eacute; Manuel Martos Romero</h1>
-        <p class="position">senior front-end developer at <a href="https://www.pantaflix.com/" title="Pantaflix" target="_blank">Pantaflix</a></p>
+        <p class="position">senior front-end developer</p>
     </header>
 </template>
 
