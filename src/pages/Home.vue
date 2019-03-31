@@ -5,7 +5,7 @@
                 <ul class="nav_list">
                     <li><a href="https://500px.com/martosjosele/" target="_blank" title="500px photography profile">photography</a></li>
                     <li><a title="All job related info to date" href="/assets/pdf/CV_JoseMartos.pdf" download>resume</a></li>
-                    <li><a href="http://eldivandesigmund.blogspot.com/" target="_blank" title="Some writings in Spanish">writings</a></li>
+                    <li><a href="https://www.quellevardeviaje.com/" target="_blank" title="A web article written in Spanish">writings</a></li>
                 </ul>
             </div>
         </nav>
