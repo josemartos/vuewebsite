@@ -12,18 +12,6 @@ const commonConfig = merge([
     module: {
       rules: [
         {
-          test: /\.(js|vue)$/,
-          use: "eslint-loader",
-          enforce: "pre"
-        },
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          use: {
-            loader: "babel-loader"
-          }
-        },
-        {
           test: /\.vue$/,
           use: "vue-loader"
         },
@@ -37,6 +25,18 @@ const commonConfig = merge([
           ]
         },
         {
+          test: /\.(js|vue)$/,
+          use: "eslint-loader",
+          enforce: "pre"
+        },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "babel-loader"
+          }
+        },
+        {
           test: /\.(css|scss)$/,
           use: [
             MiniCssExtractPlugin.loader,
@@ -44,15 +44,6 @@ const commonConfig = merge([
             "postcss-loader",
             "sass-loader"
           ]
-        },
-        {
-          test: /\.svg$/,
-          loader: "vue-svg-loader",
-          options: {
-            svgo: {
-              plugins: [{ removeDoctype: true }, { removeComments: true }]
-            }
-          }
         }
       ]
     },
