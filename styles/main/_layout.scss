@@ -1,28 +1,28 @@
 html,
 body {
-    width: 100%;
+  width: 100%;
 }
 
 body {
-    color: $font-primary;
-    font-family: $font-base;
-    background-color: $c-white;
-    font-size: $font-base-size;
+  color: $font-primary;
+  font-family: $font-base;
+  background-color: $c-white;
+  font-size: $font-base-size;
 }
 
 a {
-    color: $font-primary;
-    cursor: pointer;
-    text-decoration: none;
-    outline: none;
+  color: $font-primary;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
 
-    &:hover {
-        color: darken($font-primary, 10%);
-    }
+  &:hover {
+    color: darken($font-primary, 10%);
+  }
 }
 
 .page-container {
-    max-width: $tablet;
-    margin: 0 auto;
-    position: relative;
+  max-width: $tablet;
+  margin: 0 auto;
+  position: relative;
 }

@@ -1,10 +1,10 @@
 # vuewebsite
 
-Simple Vue.js application. See [live](http://www.martosjose.com)
+Simple Vue.js website. See [live](http://www.martosjose.com)
 
 ## description
 
-Personal website used always as an object of experimentation. In this case, it's a simple Vue.js app with a Webpack 4 setup.
+Personal website used as an object of experimentation. In this case, it's a simple Vue.js app with a Webpack 4 setup.
 
 ## setup
 
@@ -25,4 +25,3 @@ production
 ```sh
 npm run build
 ```
-

@@ -2,10 +2,10 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
 
 // High resolution images
 @mixin retina-background-image($file, $type, $width, $height) {
-    background-image: url($file + '.' + $type);
+  background-image: url($file+"."+$type);
 
-    @media #{$retina} {
-        background-image: url($file + '@2x.' + $type);
-        background-size: $width, $height;
-    }
+  @media #{$retina} {
+    background-image: url($file+"@2x."+$type);
+    background-size: $width, $height;
+  }
 }
