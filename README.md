@@ -1,14 +1,10 @@
-# vuewebsite
+# Minimalistic Vue.js website
 
-Simple Vue.js website. See [live](http://www.martosjose.com)
+> Vue.js, Webpack, Sass, PostCSS, ESlint
 
 ## description
 
-Personal website used as an object of experimentation.
-
-## tech stack
-
-Vue.js, Webpack, Sass, PostCSS, ESlint
+Personal website used as an object of experimentation. See [live](http://www.martosjose.com)
 
 ## setup
 
