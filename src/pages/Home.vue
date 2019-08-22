@@ -30,8 +30,8 @@
 
     <div class="greetings">
       <a
-        href="mailto:martosjosele@gmail.com?subject=Hi%20Jos%C3%A9%20Martos"
-        title="Say hi to Jose, or send him a fortune"
+        href="mailto:martosjosele@gmail.com?subject=Hi%20there"
+        title="Say hi to Jose, or send him a gift"
       >
         drop me
         <span>@</span> line
@@ -50,8 +50,9 @@ export default {
 @import "~styles/core/core";
 
 .nav {
-  background-color: $c-grey200;
+  background-color: $c-grey100;
   text-align: center;
+  position: relative;
 }
 
 .nav_list {
@@ -66,7 +67,7 @@ export default {
   a {
     color: $c-grey300;
     display: inline-block;
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 300;
     padding-bottom: 5px;
     text-align: center;
@@ -78,7 +79,7 @@ export default {
   }
 
   li:nth-child(2) a {
-    color: $c-grey400;
+    color: $c-grey600;
 
     &:hover {
       color: $c-black;
@@ -87,13 +88,13 @@ export default {
 
   @media screen and (max-width: $phone) {
     a {
-      font-size: 20px;
+      font-size: rem(20px);
       padding: 8px 0 11px;
       width: 100%;
     }
 
     li:nth-child(2) a {
-      background-color: $c-grey100;
+      background-color: $c-grey200-hover;
     }
 
     li {
@@ -108,7 +109,7 @@ export default {
 
   a {
     color: $c-grey300;
-    font-size: 20px;
+    font-size: rem(20px);
     transition: all 0.3s;
 
     &:hover {

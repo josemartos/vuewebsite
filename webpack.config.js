@@ -52,9 +52,6 @@ const commonConfig = merge([
         styles: path.resolve(__dirname, "./styles"),
         assets: path.resolve(__dirname, "./assets")
       }
-    },
-    optimization: {
-      runtimeChunk: "single"
     }
   },
   plugins.vueLoader(),
@@ -72,7 +69,7 @@ const commonConfig = merge([
   })
 ]);
 
-const productionConfig = merge([plugins.optimizeCSS()]);
+const productionConfig = merge([plugins.cleanBuild(), plugins.optimizeCSS()]);
 
 const developmentConfig = merge([{ devtool: "cheap-module-source-map" }]);
 

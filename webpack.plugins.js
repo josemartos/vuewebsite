@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 exports.generateHTML = ({ template, filename }) => ({
   plugins: [
@@ -45,4 +46,8 @@ exports.copyAssets = ({ from, to }) => ({
       }
     ])
   ]
+});
+
+exports.cleanBuild = () => ({
+  plugins: [new CleanWebpackPlugin()]
 });

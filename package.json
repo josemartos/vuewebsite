@@ -6,14 +6,14 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "clear-build": "rd /s /q dist",
     "start": "webpack-dev-server --mode=development",
     "watch": "webpack --watch --progress --mode=development",
-    "build": "npm run clear-build && webpack --mode=production",
+    "build": "webpack --mode=production",
     "lint": "eslint \"src/**/*.{js,vue}\""
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-typer": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -21,6 +21,7 @@
     "autoprefixer": "^9.6.1",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.1.0",
     "eslint": "^6.1.0",

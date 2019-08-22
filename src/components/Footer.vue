@@ -15,7 +15,7 @@ footer {
 
 .bio {
   color: $c-grey300;
-  font-size: 14px;
+  font-size: rem(14px);
   font-style: italic;
   font-weight: 300;
   margin: 0 auto;

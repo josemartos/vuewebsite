@@ -2,10 +2,34 @@
   <header>
     <a href="/" title="martos website" class="logo">martos website</a>
 
-    <h1 class="title">Jos&eacute; Manuel Martos Romero</h1>
-    <p class="position">front-end developer</p>
+    <div class="info">
+      <h1 class="title">Jos&eacute; Manuel Martos Romero</h1>
+      <p class="position">
+        <vue-typer :text="typerText" :repeat="0" :type-delay="100" />
+      </p>
+    </div>
   </header>
 </template>
+
+<script>
+import { VueTyper } from "vue-typer";
+
+export default {
+  name: "Header",
+  components: {
+    VueTyper
+  },
+  data() {
+    return {
+      typerText: [
+        "frontend_developer",
+        "frontendDeveloper",
+        "front-end developer"
+      ]
+    };
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 @import "~styles/core/core";
@@ -20,29 +44,34 @@ header {
 }
 
 .logo {
-  @include retina-background-image("/assets/png/logo", "png", 131px, 64px);
+  @include retina-background-image(
+    "/assets/png/martosjose-logo",
+    "png",
+    64px,
+    64px
+  );
 
   height: 64px;
-  left: 10px;
+  left: 1rem;
   overflow: hidden;
   position: absolute;
   text-indent: -300px;
-  top: 10px;
+  top: 1rem;
   transition: all 0.2s;
-  width: 131px;
+  width: 64px;
 
   @media screen and (max-width: $phone) {
     background-size: cover;
     height: 48px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
+    width: 48px;
   }
 }
 
 .title {
-  color: $c-grey400;
-  font-size: 22px;
+  color: $c-black;
+  font-size: rem(22px);
   font-weight: 300;
   margin-bottom: 5px;
   text-align: center;
@@ -50,13 +79,7 @@ header {
 
 .position {
   color: $c-grey300;
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 75%;
+  font-size: rem(18px);
   text-align: center;
-
-  a {
-    color: $c-grey400;
-  }
 }
 </style>
