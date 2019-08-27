@@ -44,6 +44,10 @@ const commonConfig = merge([
             "postcss-loader",
             "sass-loader"
           ]
+        },
+        {
+          test: /\.svg$/,
+          loader: "vue-svg-loader"
         }
       ]
     },
