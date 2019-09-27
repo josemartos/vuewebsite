@@ -2,6 +2,7 @@
 AddOutputFilterByType DEFLATE image/jpeg
 AddOutputFilterByType DEFLATE image/png
 AddOutputFilterByType DEFLATE image/gif
+AddOutputFilterByType DEFLATE image/x-icon
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
 AddOutputFilterByType DEFLATE text/xml
@@ -28,3 +29,19 @@ ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
 </IfModule>
+
+# Extra Security Headers
+<IfModule mod_headers.c>
+Header set X-XSS-Protection "1; mode=block"
+Header always append X-Frame-Options SAMEORIGIN
+Header set X-Content-Type-Options nosniff
+</IfModule>
+
+# One year cache for image files
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+# One month cache for css and js
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
