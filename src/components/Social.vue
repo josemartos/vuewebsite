@@ -7,10 +7,10 @@
 </template>
 
 <script>
-import GithubIcon from "assets/svg/github-icon.svg";
+import GithubIcon from 'assets/svg/github-icon.svg';
 
 export default {
-  name: "Social",
+  name: 'Social',
   components: {
     GithubIcon
   }
@@ -18,8 +18,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~styles/core/core";
-
 .social {
   position: absolute;
   right: 1rem;

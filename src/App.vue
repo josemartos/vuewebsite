@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import Home from "./pages/Home.vue";
-import PageRoot from "./components/PageRoot.vue";
-import MainHeader from "./components/Header.vue";
-import MainFooter from "./components/Footer.vue";
-import Social from "./components/Social.vue";
+import Home from './pages/Home.vue';
+import PageRoot from './layout/PageRoot.vue';
+import MainHeader from './components/Header.vue';
+import MainFooter from './components/Footer.vue';
+import Social from './components/Social.vue';
 
 export default {
   components: {

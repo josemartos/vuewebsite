@@ -42,13 +42,11 @@
 
 <script>
 export default {
-  name: "Home"
+  name: 'Home'
 };
 </script>
 
 <style lang="scss" scoped>
-@import "~styles/core/core";
-
 .nav {
   background-color: $c-grey100;
   text-align: center;

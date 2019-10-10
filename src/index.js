@@ -1,11 +1,11 @@
-import Vue from "vue";
-import App from "./App.vue";
+import Vue from 'vue';
+import App from './App.vue';
 
 // General styles
-import "styles/main.scss";
+import 'styles/main.scss';
 
 new Vue({
-  el: "#app",
+  el: '#app',
   render: function(h) {
     return h(App);
   }

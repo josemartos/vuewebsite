@@ -3,7 +3,7 @@
     <a href="/" title="martos website" class="logo">martos website</a>
 
     <div class="info">
-      <h1 class="title">Jos&eacute; Manuel Martos Romero</h1>
+      <h1 class="title">Hi, I am Jos&eacute; Martos</h1>
       <p class="position">
         <vue-typer :text="typerText" :repeat="0" :type-delay="100" />
       </p>
@@ -12,28 +12,22 @@
 </template>
 
 <script>
-import { VueTyper } from "vue-typer";
+import { VueTyper } from 'vue-typer';
 
 export default {
-  name: "Header",
+  name: 'Header',
   components: {
     VueTyper
   },
   data() {
     return {
-      typerText: [
-        "frontend_developer",
-        "frontendDeveloper",
-        "front-end developer"
-      ]
+      typerText: ['frontendDeveloper', 'front-end developer']
     };
   }
 };
 </script>
 
 <style lang="scss" scoped>
-@import "~styles/core/core";
-
 header {
   padding: 120px 0 70px;
   text-align: center;
@@ -45,8 +39,8 @@ header {
 
 .logo {
   @include retina-background-image(
-    "/assets/png/martosjose-logo",
-    "png",
+    '/assets/png/martosjose-logo',
+    'png',
     64px,
     64px
   );

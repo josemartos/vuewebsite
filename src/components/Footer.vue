@@ -7,8 +7,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import "~styles/core/core";
-
 footer {
   padding: 45px 0 30px;
 }
