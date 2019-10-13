@@ -4,7 +4,7 @@
 
 ## description
 
-Personal website used as an object of experimentation. See [live](http://www.martosjose.com)
+Personal website used as an object of experimentation. React version [here](https://github.com/josemartos/reactwebsite)
 
 ## setup
 
